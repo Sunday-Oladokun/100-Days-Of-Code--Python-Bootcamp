@@ -2,10 +2,14 @@
 
 # 1st input: enter height in meters
 height = float(input('What is your height?\n'))
+
 # 2nd input: enter weight in kilograms e.g: 72
 weight = float(input('What is your weight?\n'))
+
 # Body Mass Index = weight/height**2
 BMI = round(weight / (height ** 2), 2)
+
+# For loop for grouping based on BMI score
 if BMI < 18.5:
   print(f"Your Body Mass Index is {BMI}, you are underweight")
 elif BMI >= 18.5 and BMI < 25:
@@ -21,6 +25,8 @@ else:
 # The function calculates the BMI to 2 decimal places
 def Body_Mass_Index(height, weight):
   BMI = round(weight / (height ** 2), 2)
+  
+  # For loop for grouping based on BMI score
   if BMI < 18.5:
     print(f"Your Body Mass Index is {BMI}, you are underweight")
   elif BMI >= 18.5 and BMI < 25:
